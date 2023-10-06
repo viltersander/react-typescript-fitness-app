@@ -19,7 +19,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
     const navbarBackground = isTopOfPage ? "" : "bg-primary-100 drop-shadow";
 
   return (
-    <nav>
+      <nav>
         <div className={`${navbarBackground} ${flexBetween} fixed top-0 z-30 w-full py-6`}>
             <div className={`${flexBetween} mx-auto w-5/6`}>
                 <div className={`${flexBetween} w-full gap-16`}>
@@ -74,10 +74,11 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
                     <Link 
                         page="Home" 
                         selectedPage={selectedPage}
-                        setSelectedPage={setSelectedPage} 
+                        setSelectedPage={setSelectedPage}
                     />
                     <Link 
-                        page="Benefits" selectedPage={selectedPage}
+                        page="Benefits" 
+                        selectedPage={selectedPage}
                         setSelectedPage={setSelectedPage} />
                     <Link 
                         page="Our Classes" selectedPage={selectedPage}

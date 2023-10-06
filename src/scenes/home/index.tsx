@@ -25,7 +25,7 @@ const Home = ({ setSelectedPage }: Props) => {
         <motion.div className="md:flex mx-auto w-5/6 items-center justify-center md:h-5/6" 
         onViewportEnter={() => setSelectedPage(SelectedPage.Home)}>
             {/* MAIN HEADER */}
-            <div className="z-10 mt-32 md:basis-3/5">
+            <div className="z-10 mt-20 sm:mt-32 md:basis-3/5">
                 {/* HEADINGS */}
                 <motion.div className="md:-mt-20" initial="hidden"
                 whileInView="visible"
